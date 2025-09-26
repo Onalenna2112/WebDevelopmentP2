@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Remore Hair</title>
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+  <!-- External stylesheet -->
+  <link rel="stylesheet" href="css_assests/style.css">
+</head>
+<body>
+
+  <!-- HEADER & LOGO -->
+  <header>
+    <div class="logo-container">
+      <a href="index.html">
+        <img src="_images/Logo_jpeg.webp" alt="Remore Hair Logo" class="logo">
+      </a>
+      <h1>Remore Hair</h1>
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="enquiry.html">Enquiry</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- CONTACT SECTION -->
+  <section class="contact">
+    <div class="content">
+      <h2>Contact Us</h2>
+      <p>Your trusted brand for premium wigs, extensions, and natural haircare.  
+         Bringing confidence, beauty, and elegance in every strand.
+      </p>
+    </div>
+
+    <div class="container">
+      <!-- Contact Info -->
+      <div class="contact-info">
+        <div class="box">
+          <div class="icon"><i class="fa fa-map-marker"></i></div>
+          <div class="text">
+            <h3>Address</h3>
+            <p>Sandton City Office Towers, Rivonia Road<br>
+               Pretoria Menlyn Main, 180 Amarand Ave, Waterkloof Glen, 0063<br>
+               Johannesburg FB32 Bruma Oriental City Mall
+            </p>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="icon"><i class="fa fa-envelope"></i></div>
+          <div class="text">
+            <h3>Email</h3>
+            <p>remorevirginhair@gmail.com</p>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="icon"><i class="fa fa-phone"></i></div>
+          <div class="text">
+            <h3>Phone</h3>
+            <p>078 159 8209<br>065 611 7005</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="contact-form">
+        <form action="send_enquiry.php" method="POST">
+          <h2>Send Message</h2>
+          <div class="inputbox">
+            <input type="text" name="name" required>
+            <span>Full Name</span>
+          </div>
+          <div class="inputbox">
+            <input type="email" name="email" required>
+            <span>Email</span>
+          </div>
+          <div class="inputbox">
+            <textarea name="message" required></textarea>
+            <span>Type your Message...</span>
+          </div>
+          <div class="inputbox">
+            <input type="submit" value="Send">
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>📍 Remore Hair | Contact: info@remorehair.co.za | Tel: +27 123 456 789</p>
+  </footer>
+
+</body>
+</html>

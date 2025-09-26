@@ -1,0 +1,876 @@
+/* ===== CSS RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  line-height: 1.6;
+  background-color: #fff;
+  color: #333;
+}
+
+/* ===== Header ===== */
+header {
+  background: linear-gradient(90deg, #7b2cbf, #9d4edd);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 5%;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo img {
+  width: 150px;
+  height: auto;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.main-nav {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.main-nav li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.main-nav li a:hover {
+  color: #ffea00;
+}
+
+.user-nav .icon-link {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 1rem;
+  font-size: 1.1rem;
+}
+
+.user-nav .icon-link:hover {
+  color: #ffea00;
+}
+
+/* ===== Hero Section ===== */
+.hero {
+  background: url('../_images/kimkpic1.webp') center/cover no-repeat;
+  color: #fff;
+  text-align: center;
+  padding: 8rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-text {
+  max-width: 700px;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  border-radius: 12px;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero-text span {
+  color: #ffea00;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.cta-btn {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  background: #ffea00;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 30px;
+  transition: background 0.3s;
+}
+
+.cta-btn:hover {
+  background: #fff;
+}
+
+/* ===== Gallery Section ===== */
+.gallery-section {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.gallery-section h2 {
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  color: #7b2cbf;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.gallery img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* ===== About Section ===== */
+.about {
+  padding: 4rem 10%;
+  text-align: center;
+  background: #f9f9f9;
+}
+
+.about h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #7b2cbf;
+}
+
+.about p {
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* ===== Footer ===== */
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem 0;
+  font-size: 0.9rem;
+}
+
+/* ===== Responsive Design ===== */
+
+/* Tablet (768px and below) */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .main-nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-text h1 {
+    font-size: 2.2rem;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile (480px and below) */
+@media (max-width: 480px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero {
+    padding: 5rem 1rem;
+  }
+
+  .hero-text h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery img {
+    height: 250px;
+  }
+}
+
+
+
+/* ===== About Section ===== */
+.about {
+  padding: 60px 20px;
+  text-align: center;
+  background: #f3e5f5;
+}
+
+.about h2 {
+  font-size: 2.5rem;
+  color: #7e57c2;
+  margin-bottom: 15px;
+}
+
+.about p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.2rem;
+}
+
+/* ===== Footer ===== */
+footer {
+  background: #7e57c2;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .main-nav {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .user-nav {
+    justify-content: center;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .gallery img {
+    height: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .cta-btn {
+    padding: 10px 20px;
+  }
+
+  .gallery img {
+    height: 180px;
+  }
+}
+/* =========================
+   Base Reset & Global Styles
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #fafafa;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* =========================
+   Header & Navigation
+========================= */
+header {
+  background-color: beige;
+  padding: 2rem;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #4a148c;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+nav ul li a {
+  display: inline-block;
+  padding: 10px 30px;
+  background-color: #8e24aa;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: background 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #ab47bc;
+}
+
+/* =========================
+   Product Section
+========================= */
+main {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #6a1b9a;
+  margin: 3rem 0 2rem;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+figure {
+  background: #fff;
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s;
+}
+
+figure:hover {
+  transform: translateY(-5px);
+}
+
+figure img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+figcaption {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #444;
+}
+/* =========================
+   Logo Styling
+========================= */
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 150px;
+  height: auto;
+  margin-right: 20px;
+}
+
+/* Adjust header layout to align logo, title, and nav nicely */
+header {
+  background-color: beige;
+  padding: 1.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+header h1 {
+  font-size: 2rem;
+  color: #4a148c;
+  margin: 0;
+}
+
+/* Make sure nav stays aligned */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+nav ul li a {
+  padding: 10px 25px;
+  background-color: #8e24aa;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: background 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #ab47bc;
+}
+
+/* Responsive logo size for smaller screens */
+@media (max-width: 768px) {
+  .logo {
+    width: 120px;
+    margin-bottom: 10px;
+  }
+
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* =========================
+   Product List
+========================= */
+.product-list {
+  list-style: none;
+  max-width: 800px;
+  margin: 3rem auto;
+}
+
+.product-list li {
+  background: #f2f2f2;
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+/* =========================
+   Responsive Design
+========================= */
+@media (max-width: 1024px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  nav ul li a {
+    font-size: 1rem;
+    padding: 8px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 0.9rem;
+  }
+
+  header {
+    padding: 1.5rem;
+  }
+
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  nav ul li a {
+    width: 100%;
+    text-align: center;
+  }
+}
+/* =========================
+   Enquiry Form Styles
+========================= */
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.container h2 {
+  color: #6a1b9a;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.container p {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.enquiry-form {
+  display: grid;
+  gap: 15px;
+}
+
+.enquiry-form input,
+.enquiry-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.enquiry-form textarea {
+  resize: none;
+  height: 150px;
+}
+
+.enquiry-form button {
+  background: #8e24aa;
+  color: #fff;
+  padding: 14px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.enquiry-form button:hover {
+  background: #ab47bc;
+}
+
+/* =========================
+   Footer Styles
+========================= */
+footer {
+  margin-top: 40px;
+  background: #f2f2f2;
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Responsive footer */
+@media (max-width: 600px) {
+  footer {
+    font-size: 0.8rem;
+    padding: 10px;
+  }
+}
+/* =========================
+   Contact Page
+========================= */
+
+.contact {
+  padding: 50px 20px;
+  background: #fff;
+}
+
+.contact .content {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.contact .content h2 {
+  font-size: 2.2rem;
+  color: #6a1b9a;
+}
+
+.contact .content p {
+  font-size: 1rem;
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.contact .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.contact-info, .contact-form {
+  flex: 1;
+  min-width: 320px;
+}
+
+.contact-info .box {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.contact-info .icon {
+  font-size: 24px;
+  color: #6a1b9a;
+  margin-right: 15px;
+}
+
+.contact-info .text h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #6a1b9a;
+}
+
+.contact-info .text p {
+  margin: 5px 0 0;
+  font-size: 15px;
+  color: #444;
+}
+
+.contact-form {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.contact-form h2 {
+  color: #6a1b9a;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.contact-form .inputbox {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.contact-form .inputbox input,
+.contact-form .inputbox textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  outline: none;
+}
+
+.contact-form .inputbox span {
+  position: absolute;
+  left: 12px;
+  top: -10px;
+  font-size: 14px;
+  background: #f9f9f9;
+  padding: 0 5px;
+  color: #6a1b9a;
+}
+
+.contact-form .inputbox input[type="submit"] {
+  background: #6a1b9a;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  transition: background 0.3s ease;
+}
+
+.contact-form .inputbox input[type="submit"]:hover {
+  background: #4a148c;
+}
+
+/* Responsive Contact Layout */
+@media (max-width: 768px) {
+  .contact .container {
+    flex-direction: column;
+  }
+}
+/* ===== CSS RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== BASE STYLES ===== */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #fafafa;
+  color: #333;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ===== HEADER ===== */
+header {
+  background-color: blueviolet;
+  padding: 30px;
+  text-align: center;
+  color: white;
+}
+
+header h1 {
+  margin-bottom: 20px;
+}
+
+/* ===== NAVIGATION ===== */
+nav {
+  background: #f2f2f2;
+  padding: 15px 0;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 18px;
+  background: white;
+  color: blueviolet;
+  padding: 10px 30px;
+  border-radius: 6px;
+  transition: background 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+  background: #4a148c;
+  color: white;
+}
+
+/* ===== CONTAINER ===== */
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.container img {
+  display: block;
+  margin: 0 auto 20px;
+  border-radius: 8px;
+}
+
+h2, h3 {
+  color: blueviolet;
+  margin-top: 20px;
+}
+
+p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+hr {
+  margin: 40px 0;
+  border: 1px solid #eee;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+
+/* Tablet (≤ 768px) */
+@media (max-width: 768px) {
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  nav ul li a {
+    font-size: 1rem;
+    padding: 10px 20px;
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .container {
+    width: 90%;
+    padding: 15px;
+  }
+}
+
+/* Mobile (≤ 480px) */
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  nav ul li a {
+    font-size: 0.9rem;
+    padding: 8px 15px;
+  }
+}
+
+
+/* 🔮 Make navigation links purple and visible */
+.main-nav li a {
+  color: purple; /* 💜 This is the only change */
+  font-weight: bold;
+}
+
+.main-nav li a:hover {
+  color: darkviolet; /* Slightly darker on hover */
+}
+
+/* 🔮 Also make Cart, Login, Profile purple */
+.user-nav .icon-link {
+  color: purple;
+  font-weight: bold;
+}
+
+.user-nav .icon-link:hover {
+  color: darkviolet;
+}
